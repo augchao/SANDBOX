@@ -6,7 +6,5 @@ RUN /opt/conda/bin/pip2 install numpy pandas scipy matplotlib scikit-learn nltk 
 
 RUN /opt/conda/bin/conda install -n python2 -y -c anaconda pillow
 
-RUN git clone https://github.com/augchao/SANDBOX.git
+COPY start.sh /
 EXPOSE 8888
-
-CMD ["ipython", "notebook"]
